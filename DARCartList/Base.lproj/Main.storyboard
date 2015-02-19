@@ -14,7 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OdX-hV-3o6">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="OdX-hV-3o6">
                             <size key="itemSize" width="208" height="215"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -32,7 +32,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="208" height="215"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s39-7C-Tuk">
-                                                    <rect key="frame" x="0.0" y="127" width="208" height="88"/>
+                                                    <rect key="frame" x="0.0" y="147" width="208" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-bv-Dx1">
                                                             <rect key="frame" x="8" y="8" width="192" height="21"/>
@@ -44,7 +44,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-Jm-5T5">
-                                                            <rect key="frame" x="8" y="59" width="192" height="21"/>
+                                                            <rect key="frame" x="8" y="39" width="192" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="SRu-kH-2tL"/>
                                                             </constraints>
@@ -58,21 +58,21 @@
                                                         <constraint firstItem="Vrx-bv-Dx1" firstAttribute="leading" secondItem="s39-7C-Tuk" secondAttribute="leading" constant="8" id="9RE-BT-8Wq"/>
                                                         <constraint firstItem="Vrx-bv-Dx1" firstAttribute="top" secondItem="s39-7C-Tuk" secondAttribute="top" constant="8" id="9v1-IV-rtc"/>
                                                         <constraint firstAttribute="trailing" secondItem="ee2-Jm-5T5" secondAttribute="trailing" constant="8" id="GLv-2t-qKX"/>
-                                                        <constraint firstAttribute="height" constant="88" id="Iws-RN-gbv"/>
+                                                        <constraint firstAttribute="height" constant="68" id="Iws-RN-gbv"/>
                                                         <constraint firstAttribute="bottom" secondItem="ee2-Jm-5T5" secondAttribute="bottom" constant="8" id="alI-h3-P5V"/>
                                                         <constraint firstItem="ee2-Jm-5T5" firstAttribute="leading" secondItem="s39-7C-Tuk" secondAttribute="leading" constant="8" id="pkl-na-Qt8"/>
                                                         <constraint firstAttribute="trailing" secondItem="Vrx-bv-Dx1" secondAttribute="trailing" constant="8" id="zUg-Dd-pqu"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1E-eb-D4p">
-                                                    <rect key="frame" x="0.0" y="0.0" width="208" height="119"/>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1E-eb-D4p">
+                                                    <rect key="frame" x="0.0" y="0.0" width="208" height="139"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-Mc-86H">
-                                                            <rect key="frame" x="0.0" y="0.0" width="208" height="119"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="208" height="139"/>
                                                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </imageView>
                                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MwB-ol-Z7n">
-                                                            <rect key="frame" x="86" y="41" width="37" height="37"/>
+                                                            <rect key="frame" x="86" y="51" width="37" height="37"/>
                                                         </activityIndicatorView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
