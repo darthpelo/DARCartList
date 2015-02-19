@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D2EF7505922868C320C1CA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD12ABFD6C7621FF51A31FD9 /* libPods.a */; };
+		BE4E1FF61A95C621000CFB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E1FF51A95C621000CFB7F /* AppDelegate.swift */; };
+		BE4E1FF91A95C621000CFB7F /* DARCartList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE4E1FF71A95C621000CFB7F /* DARCartList.xcdatamodeld */; };
+		BE4E1FFB1A95C621000CFB7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E1FFA1A95C621000CFB7F /* ViewController.swift */; };
+		BE4E1FFE1A95C621000CFB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4E1FFC1A95C621000CFB7F /* Main.storyboard */; };
+		BE4E20001A95C621000CFB7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4E1FFF1A95C621000CFB7F /* Images.xcassets */; };
+		BE4E20031A95C621000CFB7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4E20011A95C621000CFB7F /* LaunchScreen.xib */; };
+		BE4E200F1A95C622000CFB7F /* DARCartListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E200E1A95C622000CFB7F /* DARCartListTests.swift */; };
+		BE4E201C1A95C70C000CFB7F /* DARCartListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20181A95C70C000CFB7F /* DARCartListAPI.swift */; };
+		BE4E201D1A95C70C000CFB7F /* DARProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20191A95C70C000CFB7F /* DARProductDetailViewController.swift */; };
+		BE4E201E1A95C70C000CFB7F /* DARNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E201B1A95C70C000CFB7F /* DARNetworkManager.swift */; };
+		BE4E20211A95C89D000CFB7F /* DARProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20201A95C89D000CFB7F /* DARProduct.swift */; };
+		BE4E20231A95C944000CFB7F /* DARProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E20221A95C944000CFB7F /* DARProductCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE4E20091A95C622000CFB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE4E1FE81A95C621000CFB7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE4E1FEF1A95C621000CFB7F;
+			remoteInfo = DARCartList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		324D11DF2ACFB033B0CB6C93 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3DBD28148501C7F379AA7D95 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4E1FF01A95C621000CFB7F /* DARCartList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DARCartList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4E1FF41A95C621000CFB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4E1FF51A95C621000CFB7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE4E1FF81A95C621000CFB7F /* DARCartList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DARCartList.xcdatamodel; sourceTree = "<group>"; };
+		BE4E1FFA1A95C621000CFB7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE4E1FFD1A95C621000CFB7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4E1FFF1A95C621000CFB7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE4E20021A95C621000CFB7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE4E20081A95C622000CFB7F /* DARCartListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DARCartListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4E200D1A95C622000CFB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4E200E1A95C622000CFB7F /* DARCartListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DARCartListTests.swift; sourceTree = "<group>"; };
+		BE4E20181A95C70C000CFB7F /* DARCartListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DARCartListAPI.swift; sourceTree = "<group>"; };
+		BE4E20191A95C70C000CFB7F /* DARProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DARProductDetailViewController.swift; sourceTree = "<group>"; };
+		BE4E201B1A95C70C000CFB7F /* DARNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DARNetworkManager.swift; sourceTree = "<group>"; };
+		BE4E201F1A95C845000CFB7F /* DARCartList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DARCartList-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE4E20201A95C89D000CFB7F /* DARProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DARProduct.swift; path = DataModel/DARProduct.swift; sourceTree = "<group>"; };
+		BE4E20221A95C944000CFB7F /* DARProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DARProductCell.swift; sourceTree = "<group>"; };
+		FD12ABFD6C7621FF51A31FD9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4E1FED1A95C621000CFB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2EF7505922868C320C1CA7 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4E20051A95C622000CFB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276408E613D33AD9FBA84E16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DBD28148501C7F379AA7D95 /* Pods.debug.xcconfig */,
+				324D11DF2ACFB033B0CB6C93 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		915E192E63F6F88251D2C84E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD12ABFD6C7621FF51A31FD9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE4E1FE71A95C621000CFB7F = {
+			isa = PBXGroup;
+			children = (
+				BE4E1FF21A95C621000CFB7F /* DARCartList */,
+				BE4E200B1A95C622000CFB7F /* DARCartListTests */,
+				BE4E1FF11A95C621000CFB7F /* Products */,
+				276408E613D33AD9FBA84E16 /* Pods */,
+				915E192E63F6F88251D2C84E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4E1FF11A95C621000CFB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E1FF01A95C621000CFB7F /* DARCartList.app */,
+				BE4E20081A95C622000CFB7F /* DARCartListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4E1FF21A95C621000CFB7F /* DARCartList */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E20221A95C944000CFB7F /* DARProductCell.swift */,
+				BE4E20201A95C89D000CFB7F /* DARProduct.swift */,
+				BE4E20181A95C70C000CFB7F /* DARCartListAPI.swift */,
+				BE4E20191A95C70C000CFB7F /* DARProductDetailViewController.swift */,
+				BE4E201A1A95C70C000CFB7F /* NetworkManager */,
+				BE4E1FF51A95C621000CFB7F /* AppDelegate.swift */,
+				BE4E1FFA1A95C621000CFB7F /* ViewController.swift */,
+				BE4E1FFC1A95C621000CFB7F /* Main.storyboard */,
+				BE4E1FFF1A95C621000CFB7F /* Images.xcassets */,
+				BE4E20011A95C621000CFB7F /* LaunchScreen.xib */,
+				BE4E1FF71A95C621000CFB7F /* DARCartList.xcdatamodeld */,
+				BE4E1FF31A95C621000CFB7F /* Supporting Files */,
+				BE4E201F1A95C845000CFB7F /* DARCartList-Bridging-Header.h */,
+			);
+			path = DARCartList;
+			sourceTree = "<group>";
+		};
+		BE4E1FF31A95C621000CFB7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E1FF41A95C621000CFB7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4E200B1A95C622000CFB7F /* DARCartListTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E200E1A95C622000CFB7F /* DARCartListTests.swift */,
+				BE4E200C1A95C622000CFB7F /* Supporting Files */,
+			);
+			path = DARCartListTests;
+			sourceTree = "<group>";
+		};
+		BE4E200C1A95C622000CFB7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E200D1A95C622000CFB7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4E201A1A95C70C000CFB7F /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE4E201B1A95C70C000CFB7F /* DARNetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4E1FEF1A95C621000CFB7F /* DARCartList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4E20121A95C622000CFB7F /* Build configuration list for PBXNativeTarget "DARCartList" */;
+			buildPhases = (
+				ECAD29F035655C7C9DC68D64 /* Check Pods Manifest.lock */,
+				BE4E1FEC1A95C621000CFB7F /* Sources */,
+				BE4E1FED1A95C621000CFB7F /* Frameworks */,
+				BE4E1FEE1A95C621000CFB7F /* Resources */,
+				196A7B4811636F1F647392E4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DARCartList;
+			productName = DARCartList;
+			productReference = BE4E1FF01A95C621000CFB7F /* DARCartList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE4E20071A95C622000CFB7F /* DARCartListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4E20151A95C622000CFB7F /* Build configuration list for PBXNativeTarget "DARCartListTests" */;
+			buildPhases = (
+				BE4E20041A95C622000CFB7F /* Sources */,
+				BE4E20051A95C622000CFB7F /* Frameworks */,
+				BE4E20061A95C622000CFB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE4E200A1A95C622000CFB7F /* PBXTargetDependency */,
+			);
+			name = DARCartListTests;
+			productName = DARCartListTests;
+			productReference = BE4E20081A95C622000CFB7F /* DARCartListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4E1FE81A95C621000CFB7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alessio Roberto";
+				TargetAttributes = {
+					BE4E1FEF1A95C621000CFB7F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					BE4E20071A95C622000CFB7F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = BE4E1FEF1A95C621000CFB7F;
+					};
+				};
+			};
+			buildConfigurationList = BE4E1FEB1A95C621000CFB7F /* Build configuration list for PBXProject "DARCartList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4E1FE71A95C621000CFB7F;
+			productRefGroup = BE4E1FF11A95C621000CFB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4E1FEF1A95C621000CFB7F /* DARCartList */,
+				BE4E20071A95C622000CFB7F /* DARCartListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4E1FEE1A95C621000CFB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4E1FFE1A95C621000CFB7F /* Main.storyboard in Resources */,
+				BE4E20031A95C621000CFB7F /* LaunchScreen.xib in Resources */,
+				BE4E20001A95C621000CFB7F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4E20061A95C622000CFB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196A7B4811636F1F647392E4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAD29F035655C7C9DC68D64 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4E1FEC1A95C621000CFB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4E201D1A95C70C000CFB7F /* DARProductDetailViewController.swift in Sources */,
+				BE4E1FFB1A95C621000CFB7F /* ViewController.swift in Sources */,
+				BE4E201E1A95C70C000CFB7F /* DARNetworkManager.swift in Sources */,
+				BE4E1FF61A95C621000CFB7F /* AppDelegate.swift in Sources */,
+				BE4E20211A95C89D000CFB7F /* DARProduct.swift in Sources */,
+				BE4E201C1A95C70C000CFB7F /* DARCartListAPI.swift in Sources */,
+				BE4E1FF91A95C621000CFB7F /* DARCartList.xcdatamodeld in Sources */,
+				BE4E20231A95C944000CFB7F /* DARProductCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4E20041A95C622000CFB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4E200F1A95C622000CFB7F /* DARCartListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE4E200A1A95C622000CFB7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE4E1FEF1A95C621000CFB7F /* DARCartList */;
+			targetProxy = BE4E20091A95C622000CFB7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE4E1FFC1A95C621000CFB7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4E1FFD1A95C621000CFB7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4E20011A95C621000CFB7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4E20021A95C621000CFB7F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE4E20101A95C622000CFB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE4E20111A95C622000CFB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4E20131A95C622000CFB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBD28148501C7F379AA7D95 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DARCartList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DARCartList/DARCartList-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		BE4E20141A95C622000CFB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324D11DF2ACFB033B0CB6C93 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DARCartList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DARCartList/DARCartList-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BE4E20161A95C622000CFB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DARCartListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DARCartList.app/DARCartList";
+			};
+			name = Debug;
+		};
+		BE4E20171A95C622000CFB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DARCartListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DARCartList.app/DARCartList";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4E1FEB1A95C621000CFB7F /* Build configuration list for PBXProject "DARCartList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4E20101A95C622000CFB7F /* Debug */,
+				BE4E20111A95C622000CFB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4E20121A95C622000CFB7F /* Build configuration list for PBXNativeTarget "DARCartList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4E20131A95C622000CFB7F /* Debug */,
+				BE4E20141A95C622000CFB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4E20151A95C622000CFB7F /* Build configuration list for PBXNativeTarget "DARCartListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4E20161A95C622000CFB7F /* Debug */,
+				BE4E20171A95C622000CFB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE4E1FF71A95C621000CFB7F /* DARCartList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE4E1FF81A95C621000CFB7F /* DARCartList.xcdatamodel */,
+			);
+			currentVersion = BE4E1FF81A95C621000CFB7F /* DARCartList.xcdatamodel */;
+			path = DARCartList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE4E1FE81A95C621000CFB7F /* Project object */;
+}
